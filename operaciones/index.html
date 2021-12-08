@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Crud</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-body">
+        <h1>OPERACIONES</h1>
+        <form class="row g-3 needs-validation" id="operations-form">
+          <div class="col-md-4">
+            <label class="form-label">Primer número</label>
+            <input
+              type="number"
+              class="form-control"
+              name="firstNumber"
+              id="first-number"
+            />
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Símbolo de la operación</label>
+            <input
+              type="text"
+              class="form-control"
+              name="operationSymbol"
+              id="operation-symbol"
+            />
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Segundo número</label>
+            <input
+              type="number"
+              class="form-control"
+              name="secondNumber"
+              id="second-number"
+            />
+          </div>
+          <div class="col-12" id="button-operation">
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="execute-operation"
+            >
+              Ejecutar operación
+            </button>
+          </div>
+        </form>
+      </div>
+      <table>
+        <thead>
+          <tr class="header-table">
+            <th>Primer número</th>
+            <th>Segundo número</th>
+            <th>Símbolo</th>
+            <th>Resultado</th>
+          </tr>
+        </thead>
+        <tbody id="content-table"></tbody>
+      </table>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
