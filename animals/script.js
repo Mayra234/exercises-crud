@@ -73,6 +73,7 @@ function renderAnimal() {
     //Se genera el botón de eliminar dentro del LI
     const deleteButton = document.createElement('button');
     deleteButton.innerText = 'Eliminar';
+    deleteButton.classList = 'btn btn-danger';
     deleteButton.style.marginLeft = '10px';
     deleteButton.addEventListener('click', function () {
       deleteAnimal(index);
@@ -81,6 +82,7 @@ function renderAnimal() {
     //Se genera el botón de actualizar dentro del LI
     const updateButton = document.createElement('button');
     updateButton.innerText = 'Actualizar';
+    updateButton.classList = 'btn btn-primary';
     updateButton.style.marginLeft = '10px';
     updateButton.addEventListener('click', () => {
       updateAnimal(index);
